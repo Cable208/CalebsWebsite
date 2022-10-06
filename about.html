@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Caleb Agyei">
+        <meta name="description" content="The official website for all things Caleb Agyei."> 
+        <title>About Me</title>
+        <link rel="icon" href="html5.png" type="image/x-icon">
+        <link rel="stylesheet" href=style.css> 
+        <style>
+ 
+            /* ReESIZEMY FOOTER*/
+        footer {
+             position: fixed;
+             left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: #333;
+                color: white;
+                text-align: center;
+        }
+       
+        
+        </style>
+    </head>
+
+    <body>
+            
+            <header>
+                <nav>
+                    <div class="topnav">
+                        <h4>Caleb Agyei</h4>
+                        <a href="contact.html">Contact Me</a>
+                        <a href="project.html">My Projects</a>
+                        <a href="about.html">About Me</a>
+                        <a class="active" href="index.html">Home</a>
+                    </div>   
+                </nav>
+                <h1>About Me</h1>
+            </header>
+            
+            <section>
+            <div class="container">
+                <h3 class="text-left-right">
+                    <span class="left-text">Hi I'm Caleb! </span>
+                </h3> 
+
+                <img src="caphoto.jpg" alt="Caleb Aygei">
+                <p>
+                    <b>
+                    My Name is Caleb Agyei pronounced (UH-JAY), and as of right now I am a student at University of Ontario Institute of Technology (UOIT). I love music, video games, talking to people, and making people laugh!
+                </b>
+                </p>
+            </div>
+            </section>
+
+            <section>
+                <h3  class="text-left-right">
+                    <span>Here Is a Short Video For You to Watch!</span></h3>
+            <div class="video">
+                <video width="320" height="240" controls id="video" autoplay loop muted>
+                    <source src="intro_vid.mp4" type="video/mp4">   
+                <video>   
+                <br> 
+                <button onclick="playPause()">Play or pause the video</button> 
+                <script> 
+                var myVideo=document.getElementById("video");
+                function playPause()
+                {
+                if (myVideo.paused)
+                myVideo.play();
+                else myVideo.pause();
+                } 
+                </script> 
+            </div>
+
+            </section>
+
+
+
+            
+
+            <footer>
+                <div class="footer"> 
+                 <p>Copyright &copy;2022 Caleb Agyei -- agyeicaleb2@gmail.com<p>
+                 </div>
+            </footer>
+    </body>
